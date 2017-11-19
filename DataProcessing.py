@@ -10,7 +10,7 @@ def mainPCA(images):
 
     else:
         # train pca
-        pca = PCA(n_components=0.95, random_state=42)
+        pca = PCA(n_components=0.95, whiten=True, random_state=42)
         pca.fit(images)
 
         # save pca 
