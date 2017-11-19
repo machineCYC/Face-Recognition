@@ -22,9 +22,7 @@ def detectFace(image):
         return "upload a image with face"     
 
 
-def getImageMatrixandLabels(path):
-    image_paths = [os.path.join(path, f) for f in os.listdir(path) if f.endswith("normal") or f.endswith("rightlight") or f.endswith("leftlight")]
-
+def getImageMatrixandLabels(image_paths):
     images = []
     labels = []
     for image_path in image_paths:
