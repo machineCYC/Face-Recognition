@@ -1,5 +1,5 @@
 # Face-Recognition
-The basic face recognition project
+This project focused on the methodology of PCA (Principal component analysis) and SVM (Support vector machine). We implemented the face detection and extraction using OpenCV, data processing through PCA and face recognition based on SVM algorithm, finally performance evaluation.
 
 ## Requirements
 
@@ -9,10 +9,6 @@ The basic face recognition project
 * Numpy
 * Scikit-learn
 * Matplotlib
-
-## Abstract
-
-* This project focused on the methodology of PCA (Principal component analysis) and SVM (Support vector machine). We implemented the face detection and extraction using OpenCV, face recognition based on SVM algorithm, finally performance evaluation.
  
 ## Datasets
 
@@ -21,18 +17,15 @@ The basic face recognition project
 
 ## Methodology
 
-The problem with the image representation we are given is its high dimensionality. Two-dimensional p $\times$ q grayscale images span a m = pq-dimensional vector space. We through PCA to reduce the dimension of the images
+The problem with the image representation we are given is its high dimensionality. Two-dimensional p $\times$ q grayscale images span a m = pq-dimensional vector space. Therefore we through PCA to reduce the dimension of the images. Finally, use transform data and labels to be the input of classification algorithm SVM. The predicting part, use the already training PCA to transform the test data, then put it into the SVM to predict.
 
 * [Principal component analysis](https://en.wikipedia.org/wiki/Principal_component_analysis)
 
 The Principal Component Analysis (PCA), which is the core of the Eigenfaces method, finds the directions with the greatest variance in the data, called principal components.
 
-
+<!-- Let $X$ is a data matrix, with column-wise zero empirical mean, where each of the N rows represents a image, and each of the M columns gives a particular kind of features, -->
 
 
 * [Support vector machine](https://en.wikipedia.org/wiki/Support_vector_machine)
 
-
-
-## 
 
