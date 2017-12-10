@@ -4,7 +4,7 @@ from DataProcessing import mainPCA, plot_digits
 from Model import model
 import matplotlib.pyplot as plt
 
-path = "Face-Recognition/yalefaces/"
+path = os.path.join(os.path.dirname(__file__), "yalefaces")
 image_paths = [os.path.join(path, f) for f in os.listdir(path) if f.endswith("normal") or f.endswith("rightlight") or f.endswith("leftlight")]
 
 # get the training images and label

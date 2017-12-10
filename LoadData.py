@@ -8,7 +8,8 @@ def detectFace(image):
 
     face_w = 140
     face_h = 140
-    faces = faceCascade.detectMultiScale(image)
+    faces = faceCascade.detectMultiScale(image) 
+    # a list contain Top-Left x pixel value, Top-Left y pixel value, Width of rectangle, Height of rectangle.
     haveFace = (len(faces) > 0)
     if(haveFace):
         for (x, y, w, h) in faces:
