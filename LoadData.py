@@ -8,7 +8,7 @@ def detectFace(image):
 
     face_w = 140
     face_h = 140
-    faces = faceCascade.detectMultiScale(image) 
+    faces = faceCascade.detectMultiScale(image, scaleFactor=1.1, minNeighbors=5, minSize=(30, 30), flags = cv2.CV_HAAR_SCALE_IMAGE) 
     # a list contain Top-Left x pixel value, Top-Left y pixel value, Width of rectangle, Height of rectangle.
     haveFace = (len(faces) > 0)
     if(haveFace):

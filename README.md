@@ -28,4 +28,6 @@ The Principal Component Analysis (PCA), which is the core of the Eigenfaces meth
 
 * [Support vector machine](https://en.wikipedia.org/wiki/Support_vector_machine)
 
+## Reference
+http://www.cs.ucsb.edu/~mturk/Papers/mturk-CVPR91.pdf
 
