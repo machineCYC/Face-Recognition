@@ -29,5 +29,20 @@ The Principal Component Analysis (PCA), which is the core of the Eigenfaces meth
 * [Support vector machine](https://en.wikipedia.org/wiki/Support_vector_machine)
 
 ## Reference
+
 http://www.cs.ucsb.edu/~mturk/Papers/mturk-CVPR91.pdf
 
+http://citeseerx.ist.psu.edu/viewdoc/download;jsessionid=EB7BFD1EEDA407564DD0E900D6100F20?doi=10.1.1.214.6851&rep=rep1&type=pdf
+
+https://www.bytefish.de/pdf/facerec_python.pdf
+
+
+
+"normal" "sad" "happy" 用這三種狀態當訓練資料 其於當測試資料 預測精準度會有 0.76
+"normal" "rightlight" "leftlight" 用這三種狀態當訓練資料 其於當測試資料 預測精準度會有 0.87
+"normal" 用這一種狀態當訓練資料 其於當測試資料 預測精準度會有 0.70
+
+lbp
+"normal" "sad" "happy" 用這三種狀態當訓練資料 其於當測試資料 預測精準度會有 0.69(8, 1) 0.80(20, 2)
+"normal" "rightlight" "leftlight" 用這三種狀態當訓練資料 其於當測試資料 預測精準度會有 0.85(8, 1) 0.87(20, 2)
+"normal" 用這一種狀態當訓練資料 其於當測試資料 預測精準度會有 0.79(8, 1) 0.85(20, 2)
